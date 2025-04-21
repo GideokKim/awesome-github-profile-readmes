@@ -2,6 +2,8 @@
 
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
+import rehypeRaw from 'rehype-raw'
+import remarkGfm from 'remark-gfm'
 
 const examples = [
   {
@@ -67,8 +69,21 @@ export default function IntroductionContent() {
               
               {/* Preview Section */}
               <div className="mb-6 bg-white text-gray-900 p-6 rounded-lg">
-                <div className="prose prose-sm max-w-none">
-                  <ReactMarkdown>{example.code}</ReactMarkdown>
+                <div className="prose prose-sm prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-700 prose-ul:my-4 prose-li:my-0 max-w-none">
+                  <ReactMarkdown 
+                    rehypePlugins={[rehypeRaw]}
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      h1: ({node, ...props}) => <h1 className="text-3xl font-bold mb-4" {...props} />,
+                      h2: ({node, ...props}) => <h2 className="text-2xl font-bold mb-3" {...props} />,
+                      h3: ({node, ...props}) => <h3 className="text-xl font-bold mb-2" {...props} />,
+                      p: ({node, ...props}) => <p className="mb-4" {...props} />,
+                      ul: ({node, ...props}) => <ul className="list-disc pl-6 mb-4" {...props} />,
+                      li: ({node, ...props}) => <li className="mb-1" {...props} />,
+                    }}
+                  >
+                    {example.code}
+                  </ReactMarkdown>
                 </div>
               </div>
 
