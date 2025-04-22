@@ -7,12 +7,12 @@ import remarkGfm from 'remark-gfm'
 
 const examples = [
   {
-    title: 'Goodreads Bookshelf',
-    description: 'Show your currently reading books from Goodreads',
-    code: `## 📚 Goodreads Bookshelf
+    title: 'WakaTime Stats',
+    description: 'Show your coding activity and time spent on different languages',
+    code: `## ⏱️ WakaTime Stats
 
 <div align="center">
-  <img src="https://github-readme-goodreads.vercel.app/api?user=GideokKim&shelf=currently-reading" alt="Goodreads Bookshelf" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=GideokKim&theme=radical" alt="WakaTime Stats" />
 </div>`,
   },
   {
