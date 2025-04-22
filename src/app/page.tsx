@@ -51,7 +51,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold mb-8">Awesome GitHub Profile READMEs</h1>
         <p className="text-xl text-gray-300 mb-12">
-          Create a beautiful and professional GitHub profile README with our templates and examples
+          Discover and combine various elements to create your unique GitHub profile README
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
