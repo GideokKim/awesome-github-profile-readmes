@@ -14,6 +14,11 @@ const examples = [
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=GideokKim&show_icons=true&theme=dark" />
 </div>`,
+    usage: `## 사용 방법
+1. username: 본인의 GitHub 사용자명
+2. show_icons: 아이콘 표시 여부 (true/false)
+3. theme: 테마 선택 (dark, light, transparent 등)
+4. [더 많은 옵션](https://github.com/anuraghazra/github-readme-stats)`,
   },
   {
     title: 'Streak Stats',
@@ -23,6 +28,10 @@ const examples = [
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=GideokKim&theme=dark" />
 </div>`,
+    usage: `## 사용 방법
+1. user: 본인의 GitHub 사용자명
+2. theme: 테마 선택 (dark, light 등)
+3. [더 많은 옵션](https://github.com/DenverCoder1/github-readme-streak-stats)`,
   },
   {
     title: 'Top Languages',
@@ -32,6 +41,11 @@ const examples = [
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GideokKim&layout=compact&theme=dark" />
 </div>`,
+    usage: `## 사용 방법
+1. username: 본인의 GitHub 사용자명
+2. layout: 레이아웃 선택 (compact, normal)
+3. theme: 테마 선택 (dark, light 등)
+4. [더 많은 옵션](https://github.com/anuraghazra/github-readme-stats)`,
   },
   {
     title: 'Activity Graph',
@@ -41,6 +55,10 @@ const examples = [
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=GideokKim&theme=github-dark" />
 </div>`,
+    usage: `## 사용 방법
+1. username: 본인의 GitHub 사용자명
+2. theme: 테마 선택 (github-dark, github-light 등)
+3. [더 많은 옵션](https://github.com/Ashutosh00710/github-readme-activity-graph)`,
   },
   {
     title: 'Trophy Collection',
@@ -50,6 +68,10 @@ const examples = [
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=GideokKim&theme=onedark" />
 </div>`,
+    usage: `## 사용 방법
+1. username: 본인의 GitHub 사용자명
+2. theme: 테마 선택 (onedark, dark 등)
+3. [더 많은 옵션](https://github.com/ryo-ma/github-profile-trophy)`,
   },
   {
     title: 'All-in-One Stats',
@@ -62,6 +84,10 @@ const examples = [
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GideokKim&layout=compact&theme=dark" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=GideokKim&theme=github-dark" />
 </div>`,
+    usage: `## 사용 방법
+1. 각 통계 위젯의 옵션을 조합하여 사용
+2. 테마를 통일하여 일관된 디자인 유지
+3. 필요한 통계만 선택적으로 표시 가능`,
   }
 ]
 
@@ -104,6 +130,30 @@ export default function StatisticsContent() {
                     }}
                   >
                     {example.code}
+                  </ReactMarkdown>
+                </div>
+              </div>
+
+              {/* Usage Instructions */}
+              <div className="mb-6 bg-gray-700 text-white p-6 rounded-lg">
+                <div className="prose prose-sm prose-headings:font-bold prose-headings:text-white prose-p:text-gray-300 prose-ul:my-4 prose-li:my-0 max-w-none">
+                  <ReactMarkdown 
+                    rehypePlugins={[rehypeRaw]}
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      h1: ({...props}) => <h1 className="text-3xl font-bold mb-4" {...props} />,
+                      h2: ({...props}) => <h2 className="text-2xl font-bold mb-3" {...props} />,
+                      h3: ({...props}) => <h3 className="text-xl font-bold mb-2" {...props} />,
+                      p: ({...props}) => <p className="mb-4" {...props} />,
+                      ul: ({...props}) => <ul className="list-disc pl-6 mb-4" {...props} />,
+                      li: ({...props}) => <li className="mb-1" {...props} />,
+                      table: ({...props}) => <table className="w-full border-collapse mb-4" {...props} />,
+                      tr: ({...props}) => <tr className="border-b border-gray-600" {...props} />,
+                      td: ({...props}) => <td className="p-2" {...props} />,
+                      a: ({...props}) => <a className="text-blue-400 hover:text-blue-300" {...props} />,
+                    }}
+                  >
+                    {example.usage}
                   </ReactMarkdown>
                 </div>
               </div>
