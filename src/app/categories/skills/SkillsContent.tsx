@@ -34,6 +34,10 @@ const examples = [
 - PostgreSQL
 - MySQL
 - Redis`,
+    usage: `## 사용 방법
+1. 각 카테고리별로 본인의 기술 스택을 나열
+2. 카테고리는 자유롭게 추가/수정 가능
+3. 기술 스택은 숙련도 순으로 정렬하는 것을 추천`,
   },
   {
     title: 'Skills with Icons',
@@ -55,6 +59,16 @@ const examples = [
   <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </p>`,
+    usage: `## 사용 방법
+1. [shields.io](https://shields.io)에서 원하는 기술 스택의 배지 생성
+2. 배지 스타일 옵션:
+   - style: for-the-badge (큰 배지)
+   - logo: 기술 스택의 로고
+   - logoColor: 로고 색상
+   - color: 배지 배경색
+3. 배지 URL을 복사하여 HTML img 태그로 추가
+4. align="left"로 배치하여 왼쪽 정렬
+5. 로고는 [simpleicons.org/](https://simpleicons.org/)에서 찾을 수 있음`,
   },
   {
     title: 'Skill Level Indicators',
@@ -84,6 +98,14 @@ const examples = [
 - PostgreSQL ⭐⭐⭐
 - MySQL ⭐⭐⭐
 - Redis ⭐⭐`,
+    usage: `## 사용 방법
+1. 각 기술 스택 옆에 별(⭐) 개수로 숙련도 표시
+2. 숙련도 기준:
+   - ⭐⭐: 기초 수준
+   - ⭐⭐⭐: 중급 수준
+   - ⭐⭐⭐⭐: 고급 수준
+   - ⭐⭐⭐⭐⭐: 전문가 수준
+3. 기술 스택은 숙련도 순으로 정렬`,
   },
   {
     title: 'Interactive Skills Chart',
@@ -99,6 +121,17 @@ const examples = [
 <div align="center">
   <img src="https://skillicons.dev/icons?i=js,ts,py,java,go,react,next,vue,tailwind,nodejs,express,django,spring,mongodb,postgres,mysql,redis" />
 </div>`,
+    usage: `## 사용 방법
+1. GitHub Readme Stats 위젯:
+   - username: 본인의 GitHub 사용자명
+   - layout: compact (간단한 레이아웃)
+   - theme: dark (다크 테마)
+   - [더 많은 옵션](https://github.com/anuraghazra/github-readme-stats)
+
+2. Skill Icons 위젯:
+   - i= 뒤에 쉼표로 구분된 기술 스택 아이콘 코드
+   - [사용 가능한 아이콘 목록](https://skillicons.dev)
+   - 아이콘 코드는 소문자로 작성`,
   }
 ]
 
@@ -138,9 +171,34 @@ export default function SkillsContent() {
                       table: ({...props}) => <table className="w-full border-collapse mb-4" {...props} />,
                       tr: ({...props}) => <tr className="border-b border-gray-200" {...props} />,
                       td: ({...props}) => <td className="p-2" {...props} />,
+                      a: ({...props}) => <a className="text-blue-400 hover:text-blue-300 underline" {...props} />,
                     }}
                   >
                     {example.code}
+                  </ReactMarkdown>
+                </div>
+              </div>
+
+              {/* Usage Instructions */}
+              <div className="mb-6 bg-gray-700 p-6 rounded-lg">
+                <div className="prose prose-sm prose-headings:font-bold prose-headings:text-gray-100 prose-p:text-gray-300 prose-ul:my-4 prose-li:my-0 max-w-none">
+                  <ReactMarkdown 
+                    rehypePlugins={[rehypeRaw]}
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      h1: ({...props}) => <h1 className="text-3xl font-bold mb-4" {...props} />,
+                      h2: ({...props}) => <h2 className="text-2xl font-bold mb-3" {...props} />,
+                      h3: ({...props}) => <h3 className="text-xl font-bold mb-2" {...props} />,
+                      p: ({...props}) => <p className="mb-4" {...props} />,
+                      ul: ({...props}) => <ul className="list-disc pl-6 mb-4" {...props} />,
+                      li: ({...props}) => <li className="mb-1" {...props} />,
+                      table: ({...props}) => <table className="w-full border-collapse mb-4" {...props} />,
+                      tr: ({...props}) => <tr className="border-b border-gray-600" {...props} />,
+                      td: ({...props}) => <td className="p-2" {...props} />,
+                      a: ({...props}) => <a className="text-blue-400 hover:text-blue-300 underline" {...props} />,
+                    }}
+                  >
+                    {example.usage}
                   </ReactMarkdown>
                 </div>
               </div>
