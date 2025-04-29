@@ -14,6 +14,15 @@ const examples = [
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GideokKim)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gideok-kim-113426253/)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/gideokkim)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/gideokkim)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@gideokkim)
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@gideokkim)
+[![Blog](https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white)](https://blog.gideokkim.com)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@gideokkim)
+[![Dev.to](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/gideokkim)
+[![Velog](https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white)](https://velog.io/@gideokkim)
+[![Naver Blog](https://img.shields.io/badge/Naver%20Blog-03C75A?style=for-the-badge&logo=naver&logoColor=white)](https://blog.naver.com/gideokkim)
+[![Tistory](https://img.shields.io/badge/Tistory-000000?style=for-the-badge&logo=tistory&logoColor=white)](https://gideokkim.tistory.com)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:noah.dev4127@gmail.com)`,
     usage: `## 사용 방법
 1. style: for-the-badge (큰 배지 스타일)
@@ -36,6 +45,33 @@ const examples = [
   </a>
   <a href="https://twitter.com/gideokkim">
     <img src="https://img.shields.io/badge/Twitter-Follow-blue?style=flat-square&logo=twitter" alt="Twitter" />
+  </a>
+  <a href="https://www.instagram.com/gideokkim">
+    <img src="https://img.shields.io/badge/Instagram-Follow-pink?style=flat-square&logo=instagram" alt="Instagram" />
+  </a>
+  <a href="https://www.youtube.com/@gideokkim">
+    <img src="https://img.shields.io/badge/YouTube-Subscribe-red?style=flat-square&logo=youtube" alt="YouTube" />
+  </a>
+  <a href="https://www.tiktok.com/@gideokkim">
+    <img src="https://img.shields.io/badge/TikTok-Follow-black?style=flat-square&logo=tiktok" alt="TikTok" />
+  </a>
+  <a href="https://blog.gideokkim.com">
+    <img src="https://img.shields.io/badge/Blog-Read-orange?style=flat-square&logo=blogger" alt="Blog" />
+  </a>
+  <a href="https://medium.com/@gideokkim">
+    <img src="https://img.shields.io/badge/Medium-Follow-black?style=flat-square&logo=medium" alt="Medium" />
+  </a>
+  <a href="https://dev.to/gideokkim">
+    <img src="https://img.shields.io/badge/dev.to-Follow-black?style=flat-square&logo=dev.to" alt="Dev.to" />
+  </a>
+  <a href="https://velog.io/@gideokkim">
+    <img src="https://img.shields.io/badge/Velog-Follow-teal?style=flat-square&logo=velog" alt="Velog" />
+  </a>
+  <a href="https://blog.naver.com/gideokkim">
+    <img src="https://img.shields.io/badge/Naver%20Blog-Follow-green?style=flat-square&logo=naver" alt="Naver Blog" />
+  </a>
+  <a href="https://gideokkim.tistory.com">
+    <img src="https://img.shields.io/badge/Tistory-Follow-black?style=flat-square&logo=tistory" alt="Tistory" />
   </a>
 </div>`,
     usage: `## 사용 방법
@@ -60,13 +96,32 @@ const examples = [
   <a href="https://twitter.com/gideokkim" target="_blank">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" alt="Twitter" width="30" height="30" />
   </a>
+  <a href="https://www.instagram.com/gideokkim" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" alt="Instagram" width="30" height="30" />
+  </a>
+  <a href="https://www.youtube.com/@gideokkim" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" alt="YouTube" width="30" height="30" />
+  </a>
+  <a href="https://www.tiktok.com/@gideokkim" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/tiktok.svg" alt="TikTok" width="30" height="30" />
+  </a>
+  <a href="https://blog.gideokkim.com" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/blogger.svg" alt="Blog" width="30" height="30" />
+  </a>
+  <a href="https://medium.com/@gideokkim" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/medium.svg" alt="Medium" width="30" height="30" />
+  </a>
+  <a href="https://dev.to/gideokkim" target="_blank">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dev-dot-to.svg" alt="Dev.to" width="30" height="30" />
+  </a>
 </div>`,
     usage: `## 사용 방법
 1. simple-icons 라이브러리 사용
 2. width, height: 아이콘 크기 설정
 3. target="_blank": 새 탭에서 열기
 4. alt: 접근성을 위한 대체 텍스트
-5. [더 많은 아이콘](https://simpleicons.org)`,
+5. ⚠️ 주의: naver, tistory, velog 아이콘은 없습니다.
+6. [더 많은 아이콘](https://simpleicons.org)`,
   },
   {
     title: 'Animated Links',
@@ -82,6 +137,33 @@ const examples = [
   </a>
   <a href="https://twitter.com/gideokkim" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-Follow-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  </a>
+  <a href="https://www.instagram.com/gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-Follow-pink?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="https://www.youtube.com/@gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
+  </a>
+  <a href="https://www.tiktok.com/@gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/TikTok-Follow-black?style=for-the-badge&logo=tiktok&logoColor=white" alt="TikTok" />
+  </a>
+  <a href="https://blog.gideokkim.com" target="_blank">
+    <img src="https://img.shields.io/badge/Blog-Read-orange?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog" />
+  </a>
+  <a href="https://medium.com/@gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/Medium-Follow-black?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" />
+  </a>
+  <a href="https://dev.to/gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/dev.to-Follow-black?style=for-the-badge&logo=dev.to&logoColor=white" alt="Dev.to" />
+  </a>
+  <a href="https://velog.io/@gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/Velog-Follow-teal?style=for-the-badge&logo=velog&logoColor=white" alt="Velog" />
+  </a>
+  <a href="https://blog.naver.com/gideokkim" target="_blank">
+    <img src="https://img.shields.io/badge/Naver%20Blog-Follow-green?style=for-the-badge&logo=naver&logoColor=white" alt="Naver Blog" />
+  </a>
+  <a href="https://gideokkim.tistory.com" target="_blank">
+    <img src="https://img.shields.io/badge/Tistory-Follow-black?style=for-the-badge&logo=tistory&logoColor=white" alt="Tistory" />
   </a>
 </div>`,
     usage: `## 사용 방법
